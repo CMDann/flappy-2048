@@ -24,7 +24,7 @@
     </div>
     <!-- <p class="game-intro">Jump through the tiles and get to <strong>2048!</strong></p> -->
 
-    <div class="game-container">
+    <div id="main_container" class="game-container">
       <div class="game-message">
         <p></p>
         <div class="lower">
@@ -71,8 +71,6 @@
     </p> -->
     <hr>
 
-    <!-- Ads -->
-
   </div>
 
   <script src="js/animframe_polyfill.js"></script>
@@ -80,8 +78,26 @@
   <script src="js/html_actuator.js"></script>
   <script src="js/grid.js"></script>
   <script src="js/tile.js"></script>
+  <script src="js/inneractive.js"></script>
   <script src="js/local_score_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
 </body>
+<footer>
+    <div id="ads"></div>
+    <!-- Creating ads -->
+  <script>
+    var options = {
+        TYPE: "Banner",
+        REFRESH_RATE: 18,
+        APP_ID: "CMDannDevelopment_Flappy2048_other"
+    };
+
+    var container = document.getElementById("ads");
+ 
+    var myAd = Inneractive.createAd(options);
+    myAd.addTo(container);
+    myAd.placement("bottom", "center");
+  </script>
+</footer>
 </html>
