@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.4.1",
   "name": "Flappy 2048",
   "launch_path": "/index.html",
   "description": "Inspired by both Flappy Bird and 2048, This game is both challenging and fun. Get a high score while avoiding the barriers.",
